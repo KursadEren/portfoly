@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       
          <Navbar/>
-         <div className="flex flex-1 ">
+         <div className="flex flex-1 h-auto w-full ">
          <Content/>
          </div>
          
