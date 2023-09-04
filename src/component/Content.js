@@ -1,15 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Content() {
   
   return(
-    <div className='flex '>
-      <div className=' flex-1 '>
-        <div className='text-black h-full w-full'>
-           hey
-        </div>
+    <div className='Content-container'>
+      hey
+     <style jsx>
+      {`
 
-      </div>
+        .Content-container{
+          width:100%;
+          height:100%;
+          border:10px solid #000000;
+
+        }
+
+      `}
+     </style>
     </div>
   );
 }

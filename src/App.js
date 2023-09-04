@@ -1,12 +1,12 @@
 
-import AboutScreen from "./AboutScreen";
+import AboutScreen from "./Screen/AboutScreen";
 
 import "./style.css"
 import { BrowserRouter , Routes, Route, NavLink } from 'react-router-dom';
-import WorkScreen from "./WorkScreen";
+import WorkScreen from "./Screen/WorkScreen";
 import React,{useState,useEffect} from "react";
-import HOME from "./HomeScreen";
-import ContactScreen from   "./ContactScreen";
+import HOME from "./Screen/HomeScreen";
+import ContactScreen from   "./Screen/ContactScreen";
 
 function App() {
 
@@ -122,7 +122,6 @@ function App() {
          <Route path="/work" element={<WorkScreen />} />
          <Route path="/about" element={<AboutScreen />} />
          <Route path="/contact" element={<ContactScreen />} />
-        
       </Routes>
  
    </>
