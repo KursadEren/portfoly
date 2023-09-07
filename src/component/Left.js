@@ -19,15 +19,15 @@ export default function Left() {
         height:100%;
         justify-content:space-around;
         align-items:center;
-        margin-top:1px;
+        
        }
        .left-1{
         
         background:#000000;
         margin-top:20px;
         display:flex;
-        width:300px;
-        height:300px;
+        width:299px;
+        height:299px;
         border: 1px solid #ddd;
         justify-content:center;
         align-items:center;

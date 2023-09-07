@@ -3,13 +3,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Kartları ortala */
-    gap: 20px; /* Kartlar arasındaki boşluk */
+     /* Kartlar arasındaki boşluk */
   }
-  
+  .Container h2{
+     width: 100%;
+     border: 1px solid white;
+     background-color: #000000;
+     text-align: center;
+     color:white;
+  }
   .blog-card {
-    width: calc(50% - 10px); /* Kartların yarı genişliği ve aralarındaki boşluk ayarı */
-    margin: 10px;
+    width: calc(95% - 10px); /* Kartların yarı genişliği ve aralarındaki boşluk ayarı */
     padding: 20px;
+    margin: 10px;
     background-color: #000000;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
