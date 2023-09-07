@@ -48,7 +48,7 @@ function App() {
       <nav>
       <div className="flex bg-black">
         <div className="flex-1 flex">
-          <a href='#' className='mx-32 mt-32'>
+          <a href='#' className='mx-20 mt-20'>
             Kürşad Eren MADEN
           </a>
         </div>

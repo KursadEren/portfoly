@@ -65,14 +65,14 @@ export default function Left() {
        `}
        </style>
          <div className='left-info'>
-               <ul>
-                 <li>
-                   <a> Github: <a className='github-link' href='https://github.com/KursadEren'> KÜRŞAD EREN MADEN</a></a><br/><br/>
-                   <a> Linkedin: <a className='github-link' href=' https://www.linkedin.com/in/kursad-maden-385715259/' >KÜRŞAD EREN MADEN</a></a><br/><br/>
-                   <a> iletişim: +905539777143 </a>  <br/><br/>
-                   <a> Email: k.erenmaden1@outlook.com </a>
-                 </li>
-               </ul>
+              <ul>
+                <li>
+                  <a> Github: <a className='github-link' href='https://github.com/KursadEren'> KÜRŞAD EREN MADEN</a></a><br/><br/>
+                  <a> Linkedin: <a className='github-link' href=' https://www.linkedin.com/in/kursad-maden-385715259/' >KÜRŞAD EREN MADEN</a></a><br/><br/>
+                  <a> iletişim: +905539777143 </a>  <br/><br/>
+                  <a> Email: k.erenmaden1@outlook.com </a>
+                </li>
+              </ul>
          </div>
      </div>
   )
