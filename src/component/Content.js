@@ -33,12 +33,12 @@ function Content({ page }) {
         </div>
       ) : page === "HomeScreen" ? (
         <div className='Home-Content-Container'>
-           {dilVerileri.map((veri) => (
-        <div key={veri.id}>
-          <h1>{veri.dilAdi} Dil Yüzdesi</h1>
-          <DilGrafik dilAdi={veri.dilAdi} yuzde={veri.yuzde} />
-        </div>
-      ))}
+                 {dilVerileri.map((veri) => (
+          <div key={veri.id}>
+            <DilGrafik dilAdi={veri.dilAdi} yuzde={veri.yuzde} id={`grafik-${veri.id}`} />
+          </div>
+        ))}
+
         </div>
       ) : page === "BlogScreen" ? (
         <BlogContent />
@@ -47,6 +47,7 @@ function Content({ page }) {
       ) : null}
       <style jsx>
         {`
+       
           .Home-Content-Container {
             width: 100%;
             height: 100%;

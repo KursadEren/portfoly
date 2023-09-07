@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import { Doughnut } from 'react-chartjs-2';
-import { Chart } from 'chart.js/auto';
+import Chart from 'chart.js/auto';
 
 const DilGrafik = ({ dilAdi, yuzde }) => {
   const grafikCanvasRef = useRef(null);
+  const grafikRef = useRef(null);
 
   useEffect(() => {
     const grafikCanvas = grafikCanvasRef.current;
-    const ctx = grafikCanvas.getContext('2d');
+
+    if (grafikRef.current) {
+      // Önceki grafik varsa yok et
+      grafikRef.current.destroy();
+    }
 
     const dilEtiketleri = [dilAdi, 'Diğer Diller'];
     const yuzdeler = [yuzde, 100 - yuzde];
@@ -25,7 +30,7 @@ const DilGrafik = ({ dilAdi, yuzde }) => {
       ],
     };
 
-    new Chart(ctx, {
+    const yeniGrafik = new Chart(grafikCanvas, {
       type: 'doughnut',
       data: grafikVerileri,
       options: {
@@ -37,16 +42,31 @@ const DilGrafik = ({ dilAdi, yuzde }) => {
         },
       },
     });
+
+    // Yeni grafik referansını güncelle
+    grafikRef.current = yeniGrafik;
   }, [dilAdi, yuzde]);
 
   return (
     <div className="dil-grafik">
+      <div class="kaydirilabilir-div">
       <canvas ref={grafikCanvasRef} />
+       </div>
+
+     
       <style jsx>
         {`
-         .dil-grafik{
-          width:200px;
-          height:200px;
+        .kaydirilabilir-div {
+          overflow: auto; 
+          max-height: 300px; 
+        
+        }
+        
+         .dil-grafik {
+          justify-content:center;
+          align-items:center;
+          width: 300px;
+          height: 400px;
          }
         `}
       </style>
