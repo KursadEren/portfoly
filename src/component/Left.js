@@ -19,6 +19,7 @@ export default function Left() {
         height:100%;
         justify-content:space-around;
         align-items:center;
+        margin-top:1px;
        }
        .left-1{
         
@@ -33,16 +34,16 @@ export default function Left() {
        }
        .left-img img{
         display:flex;
-        width:250px;
-        height:250px;
+        width:285px;
+        height:285px;
        }
        .left-img{
         display:flex;
         background:white;
         justify-content:center;
         align-items:center;
-        width:250px;
-        height:250px;
+        width:285px;
+        height:285px;
         border : 1px solid #000000;
        }
        .left-info{
@@ -69,8 +70,10 @@ export default function Left() {
                 <li>
                  
                  <a> Github: <a className='github-link' href='https://github.com/KursadEren'> KÜRŞAD EREN MADEN</a></a><br/><br/>
+                 <a> Linkedin: <a className='github-link' href=' https://www.linkedin.com/in/kursad-maden-385715259/' >KÜRŞAD EREN MADEN</a></a><br/><br/>
                  <a> iletişim: +905539777143 </a>  <br/><br/>
                  <a> Email: k.erenmaden1@outlook.com </a>
+                
                 </li>
               </ul>
 

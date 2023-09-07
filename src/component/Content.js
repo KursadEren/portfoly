@@ -1,22 +1,31 @@
 import React from 'react';
+import '../Componentcss/Content.css';
+import ContactForm from './ContactForm';
+import BlogContent from './BlogContent';
 
-function Content() {
-  
-  return(
+function Content({ page }) {
+  return (
     <div className='Content-container'>
-      hey
-     <style jsx>
-      {`
+     
+        {page === "WorkScreen" ? (
+           <div className='content-img-container'>
+          <img className='img' src='./giris.png' alt='' />
+          </div>
+        ) : page === "HomeScreen" ? (
+          <div>
+            hey
+          </div>
+        ) : page === "BlogScreen" ? 
+        (
+       <BlogContent/>
 
-        .Content-container{
-          width:100%;
-          height:100%;
-          border:10px solid #000000;
-
-        }
-
-      `}
-     </style>
+        ): page === "ContactScreen"?
+         (
+           
+              <ContactForm/>
+           
+         ) : null  }
+      
     </div>
   );
 }

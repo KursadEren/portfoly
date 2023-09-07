@@ -1,0 +1,51 @@
+/* Blog kartları */
+.blog-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Kartları ortala */
+    gap: 20px; /* Kartlar arasındaki boşluk */
+  }
+  
+  .blog-card {
+    width: calc(50% - 10px); /* Kartların yarı genişliği ve aralarındaki boşluk ayarı */
+    margin: 10px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+    color: #ffffff; /* Metin rengi */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    z-index: 2;
+  }
+  
+  .blog-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff; /* Başlık rengi */
+  }
+  
+  .blog-card p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .blog-card a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  /* Blog kartlarının medya sorguları */
+  @media (max-width: 768px) {
+    .blog-card {
+      width: 100%;
+    }
+  }
+  

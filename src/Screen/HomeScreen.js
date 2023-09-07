@@ -9,7 +9,7 @@ function HOME() {
         <Left />
       </div>
       <div className="Content-Container">
-        <Content />
+        <Content page="HomeScreen" />
       </div>
 
       <style jsx>

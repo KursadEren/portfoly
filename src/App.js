@@ -1,5 +1,5 @@
 
-import AboutScreen from "./Screen/AboutScreen";
+import BlogScreen from "./Screen/BlogScreen";
 
 import "./style.css"
 import { BrowserRouter , Routes, Route, NavLink } from 'react-router-dom';
@@ -120,8 +120,9 @@ function App() {
       <Routes>
          <Route path="/" element={<HOME />} />
          <Route path="/work" element={<WorkScreen />} />
-         <Route path="/about" element={<AboutScreen />} />
+         <Route path="/blog" element={<BlogScreen />} />
          <Route path="/contact" element={<ContactScreen />} />
+         
       </Routes>
  
    </>

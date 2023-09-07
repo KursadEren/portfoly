@@ -1,0 +1,16 @@
+.Content-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    border:10px solid #000000;
+
+  }
+  .content-img-container{
+    border: 3px solid #000000;
+  }
+  .content-img-container img{
+    width:100%;
+    height:100%;
+  }
